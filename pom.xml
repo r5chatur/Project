@@ -369,7 +369,7 @@
                     <!-- to prevent runtime errors, OpenJPA tests are ignored -->
                     <forkCount>3</forkCount>
                     <reuseForks>true</reuseForks>
-                    <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
+                    <argLine>${jacoco.utAgentConfig}</argLine>
                     <includes>
                         <include>**/*Tests.java</include>
                     </includes>
