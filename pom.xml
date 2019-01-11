@@ -367,6 +367,8 @@
                     <!-- <argLine>-XX:-UseSplitVerifier ${jacoco.utAgentConfig}</argLine> -->
                     <!-- JDK 8 - bytecode verifier cannot be relaxed or disabled -->
                     <!-- to prevent runtime errors, OpenJPA tests are ignored -->
+                    <forkCount>3</forkCount>
+                    <reuseForks>true</reuseForks>
                     <argLine>${jacoco.utAgentConfig}</argLine>
                     <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
                     <includes>
